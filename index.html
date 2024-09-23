@@ -7,58 +7,83 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header id="header">
-      <div id="header1">
-        <a class="nav-link"><img src="./logo.jpg" alt="Tarjeta de video" id="header-img"> Tienda de Tarjetas Gráficas</a>
-      </div>
-      <div id="header2">
-        <nav id="nav-bar">
-            <a href="#features" class="nav-link">Características</a>
-            <a href="#contact" class="nav-link">Contacto</a>
-            <a href="#products" class="nav-link">Productos</a>
-        </nav>
-      </div>
-    </header>
-
-    <section id="features">
-        <h2>Características Impresionantes</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Mauris eu tincidunt lacus. Donec laoreet metus eget leo. Pellentesque elementum velit quis risus vehicula lacinia.</p>
-        <video id="video" src="demo.mp4" controls width="640" height="360"></video>
-    </section>
-
-    <section id="contact">
-        <h2>Mantente Conectado</h2>
-        <form id="form" action="https://www.freecodecamp.com/email-submit">
-            <label for="email">Suscríbete a nuestro boletín:</label>
-            <input type="email" id="email" name="email" placeholder="Ingrese su correo electrónico">
-            <input type="submit" id="submit" value="Suscribirse">
-        </form>
-    </section>
-
-<section id="products">
-        <h2>Descubre la potencia de la Serie 4000</h2>
-        <div class="product">
-            <img src="4070.jpg" alt="Tarjeta Gráfica RTX 4070">
-            <h3>RTX 4070</h3>
-            <p>La tarjeta gráfica perfecta para gamers y creadores.</p>
-            <button>Comprar</button>
+    <div class="container">
+        <header id="header" class="show-header">
+        <div id="header1">
+            <img src="./logo.jpg" alt="Tarjeta de video" id="header-img">
         </div>
-        <div class="product">
-            <img src="4080.jpg" alt="Tarjeta Gráfica RTX 4080">
-            <h3>RTX 4080</h3>
-            <p>Experimenta un rendimiento gráfico de siguiente generación.</p>
-            <button>Comprar</button>
+        <div id="header2">
+            <nav id="nav-bar">
+                <a href="#contact" class="nav-link">Contacto</a>
+                <a href="#features" class="nav-link">Características</a>
+                <a href="#products" class="nav-link">Productos</a>
+            </nav>
         </div>
-        <div class="product">
-            <img src="4090.jpg" alt="Tarjeta Gráfica RTX 4090">
-            <h3>RTX 4090</h3>
-            <p>La tarjeta gráfica más potente del mercado.</p>
-            <button>Comprar</button>
-        </div>
-    </section>
+        </header>
+        <div id="main-doc">
+            <section id="contact">
+                <h2>Handcrafted, home-made masterpieces</h2>
+                <form id="form" action="https://www.freecodecamp.com/email-submit">
+                    <input type="email" id="email" name="email" placeholder="Enter your email address">
+                    <input type="submit" id="submit" value="Get started">
+                </form>
+            </section>
 
-    <footer>
-        <p>&copy; 2023 Tu Tienda de Tarjetas Gráficas</p>
-    </footer>
+            <section id="features">
+                <h2>Características Destacadas de la Serie 4000</h2>
+                <div class="feature">
+                  <img src="./images/Arquitectura-ada-lovelace.jpeg" alt="Arquitectura Ada Lovelace">
+                  <div class="feature-text">
+                    <h3>Arquitectura Ada Lovelace</h3>
+                    <p>Experimenta un salto cuántico en rendimiento con la arquitectura NVIDIA Ada Lovelace. Disfruta de juegos más fluidos y realistas, y crea contenido de alta calidad.</p>
+                  </div>
+                </div>
+                <div class="feature">
+                  <img src="./images/Ray-tracing.jpg" alt="Ray Tracing en tiempo real">
+                  <div class="feature-text">
+                    <h3>Ray Tracing en Tiempo Real</h3>
+                    <p>Sumérgete en mundos virtuales increíblemente realistas gracias al ray tracing de tercera generación. Disfruta de sombras, reflejos y refracciones con un nivel de detalle sin precedentes.</p>
+                  </div>
+                </div>
+                <div class="feature">
+                  <img src="./images/Dlss-3.webp" alt="DLSS 3">
+                  <div class="feature-text">
+                    <h3>DLSS 3</h3>
+                    <p>Aumenta el rendimiento de tus juegos sin sacrificar la calidad visual con DLSS 3. Disfruta de altas tasas de fotogramas y resoluciones sin necesidad de una configuración de hardware extrema.</p>
+                  </div>
+                </div>
+              </section>
+
+            <section id="features">
+                <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/fj245xMr-BM?si=4UFb7Y-KrsbwRYYm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen><video id="video" src="demo.mp4"></video></iframe>
+            </section>
+
+        <section id="products">
+                <div class="product">
+                    <h3>RTX 4070 SUPER</h3>
+                    <h4 class="price">680$</h4>
+                    <p>La tarjeta gráfica perfecta para gamers y creadores.</p>
+                    <button>Comprar</button>
+                </div>
+                <div class="product">
+                    <h3>RTX 4080 SUPER</h3>
+                    <h4 class="price">1249$</h4>
+                    <p>Experimenta un rendimiento gráfico de siguiente generación.</p>
+                    <button>Comprar</button>
+                </div>
+                <div class="product">
+                    <h3>RTX 4090</h3>
+                    <h4 class="price">1599$</h4>
+                    <p>La tarjeta gráfica más potente del mercado.</p>
+                    <button>Comprar</button>
+                </div>
+            </section>
+
+            <footer>
+                <p>&copy; 2023 Tu Tienda de Tarjetas Gráficas</p>
+            </footer>
+        </div>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
