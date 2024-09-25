@@ -171,7 +171,7 @@ iframe {
   flex-direction: column;
   border: 1px solid #000000;
   text-align: center;
-  height: auto;
+  height: 15em;
   width:20em;
   background-color: #f9f9f9;
   padding-bottom: 20px;
@@ -290,6 +290,10 @@ footer p {
     align-self:center
   }
 
+#section .youtube {
+  padding: 0;
+}
+  
   #products {
     display: flex;
     flex-direction: column;
@@ -303,8 +307,8 @@ footer p {
   .product {
     border: 1px solid #000000;
     text-align: center;
-    width: 100%;
-    height: 17em;
+    width: 20em;
+    height: 15em;
     background-color: #f9f9f9;
     padding-bottom: 20px;
   }
@@ -345,7 +349,7 @@ p {
   section  {
         width: 100%;
         text-align: center;
-        padding: 0;
+        padding: 20px;
     }
 
 }
