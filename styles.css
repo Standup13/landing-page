@@ -18,7 +18,7 @@ body {
 
 header {
   display: flex;
-  padding: 0px 20px;
+  padding: 10px 20px;
   background-color: #f0f0f0;
   color: #000000;
   height: 80px;
@@ -32,7 +32,6 @@ header {
 #header1 {
   display: flex;
   flex: 4;
-
 }
 
 #header-img {
@@ -62,7 +61,6 @@ section {
   display: flex;
   flex-direction: column;
   padding: 20px;
-  width: 100%;
 }
 
 #contact {
@@ -116,7 +114,7 @@ section {
 }
 
 .feature-text {
-  width: 1000px;
+  width: auto;
 }
 
 .paragraph {
@@ -141,6 +139,7 @@ iframe {
   align-items: center;
   margin: 0 auto;
   width: auto;
+  height: auto;
   gap: 10px;
 }
 
@@ -149,7 +148,7 @@ iframe {
   flex-direction: column;
   border: 1px solid #000000;
   text-align: center;
-  width: 300px;
+  height: auto;
   background-color: #f9f9f9;
   padding-bottom: 20px;
 }
@@ -205,25 +204,58 @@ footer p {
   justify-content: flex-end;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 1072px) {
+  #products {
+      flex-direction: column;
+      
+  }
+}
+
+@media (max-width: 864px) {
+  nav {
+      margin-top: 10px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 0 50px;
+  }
+
+  header {
+    display: flex;
+    padding: 40px 130px 0 0;
+    background-color: #f0f0f0;
+    color: #000000;
+    height: auto;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+  }
+
+  #header-img {
+    height: 4em;
+    width: 20em;
+    padding-left: 20px;
+  }
+}
+
+@media (max-width: 804px) {
   header {
     flex-direction: column;
     text-align: center;
     height: auto;
+    padding: 0;
   }
-
-  #nav-bar {
-    display: flex;
-    flex-direction: column;
-}
 
   #header-img {
     width: 100%;
     height: auto;
+    padding: 0;
   }
 
   .paragraph {
-    margin-right: 3em;
+    margin-right: 1em;
 }
 
   iframe {
@@ -235,11 +267,11 @@ footer p {
 
   #products {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     margin: 0 auto;
-    width: auto;
+    width: 25em;
     gap: 10px;
   }
 
@@ -266,6 +298,17 @@ footer p {
 
 p {
   margin: auto;
-}
+  }
+}   
 
-}    
+@media (max-width: 733px) {
+  .feature img {
+    display: none;
+  }
+  section  {
+        width: 100%;
+        text-align: center;
+        padding: 0;
+    }
+
+}
