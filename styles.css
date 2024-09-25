@@ -95,6 +95,11 @@ section {
   background-color: rgb(89, 255, 47);
 }
 
+#features {
+  display: flex;
+  flex-direction: column;
+}
+
 #features h2 {
   margin-bottom: 50px;
   align-self:center;
@@ -102,19 +107,38 @@ section {
 
 .feature {
   display: flex;
-  align-items: center;
-  margin-bottom: 20px;
+  flex-direction: row;
   justify-content: center;
-  gap: 20px;
+  align-items: center;
+  width:100%;
+  height: auto;
+}
+
+.feature .icon {
+  display: flex;
+  height: 10em;
+  width: 80em;
+  align-items: center;
+  margin-left: 1em;
 }
 
 .feature img {
-  width: 120px;
-  height: 5.5rem;
+  margin-left: 20px;
+  align-self: center;
+  width: 20vw;
+  max-width: 180px;
+}
+
+.image {
+  margin-left: 20px;
 }
 
 .feature-text {
-  width: auto;
+  display:flex;
+  flex-direction: column;
+  font-size: 20px;
+  margin-left: 2em;
+  width: 75vw;
 }
 
 .paragraph {
@@ -303,6 +327,18 @@ p {
 }   
 
 @media (max-width: 733px) {
+
+  .feature {
+    justify-content: center;
+    margin-left: 0;
+    margin-bottom: 10px;
+  }
+
+  .feature .icon {
+    display: block;
+    margin-left: 0;
+}
+
   .feature img {
     display: none;
   }
