@@ -231,20 +231,19 @@ footer p {
 
 @media (max-width: 1072px) {
   #products {
-      flex-direction: column;
-      
+    flex-direction: column;
   }
 }
 
 @media (max-width: 864px) {
   nav {
-      margin-top: 10px;
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-      padding: 0 50px;
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0 50px;
   }
 
   header {
@@ -281,7 +280,7 @@ footer p {
 
   .paragraph {
     margin-right: 1em;
-}
+  }
 
   iframe {
     width: 80vw;
@@ -290,9 +289,9 @@ footer p {
     align-self:center
   }
 
-#section .youtube {
-  padding: 0;
-}
+  #section .youtube {
+    padding: 0;
+  }
   
   #products {
     display: flex;
@@ -325,8 +324,8 @@ footer p {
     cursor: pointer;
   }
 
-p {
-  margin: auto;
+  p {
+    margin: auto;
   }
 }   
 
@@ -347,9 +346,9 @@ p {
     display: none;
   }
   section  {
-        width: 100%;
-        text-align: center;
-        padding: 20px;
-    }
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+  }
 
 }
